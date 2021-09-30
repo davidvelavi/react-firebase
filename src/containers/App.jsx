@@ -20,6 +20,7 @@ const App = () => {
 
   return (
     <div>
+      <p> HOlaaaaa</p>
       <Header user={user} />
       <button onClick={handleLogin} type='button'> login </button>
       <button onClick={handleLogout} type='button'> logout </button>

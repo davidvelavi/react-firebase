@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --config webpack.config.dev.js ",
-    "build": "webpack --mode production --config webpack.config.js",
-    "deploy:dev": "firebase use dev && npm run build && firebase deploy --only hosting",
-    "deploy:prod": "firebase use prod && npm run build && firebase deploy --only hosting"
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,7 +1,8 @@
 {
   "projects": {
-    "dev": "react-firebase-1ef0a",
-    "prod": "react-firebase-prod-252c9"
+    "default": "react-firebase-1ef0a",
+    "prod": "fir-react-prod-67a83",
+    "dev": "react-firebase-1ef0a"
   },
   "targets": {}
 }
