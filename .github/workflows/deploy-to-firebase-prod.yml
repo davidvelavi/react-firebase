@@ -1,12 +1,12 @@
-name: Build and Deploy
+name: Build and Deploy to Production
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   build:
-    name: Build
+    name: Build Production
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -31,7 +31,7 @@ jobs:
           name: dist
           path: dist
   deploy:
-    name: Deploy
+    name: Deploy to Production
     needs: build
     runs-on: ubuntu-latest
     steps:
