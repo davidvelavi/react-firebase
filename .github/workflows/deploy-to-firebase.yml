@@ -23,7 +23,7 @@ jobs:
       - name : Check envs
         run: env
       - name: Build
-        run: npm run build
+        run: API_KEY=${{env.API_KEY}} npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
