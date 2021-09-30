@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "react-firebase-1ef0a"
+    "dev": "react-firebase-1ef0a",
+    "prod": "react-firebase-prod-252c9"
   }
 }
