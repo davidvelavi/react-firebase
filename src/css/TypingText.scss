@@ -1,0 +1,35 @@
+.TypingText{
+    display: inline-flex;
+    &-static{
+        font-size: var(--tying-text-static-font-size, 60px);
+        font-weight: var(--tying-text-static-font-weight, 400);
+        color: var(--tying-text-static-font-color, #000);
+        margin-right: 1rem;
+    }
+    &-dynamic{
+        overflow: hidden;
+        font-size: var(--tying-text-dynamic-font-size, 60px);
+        font-weight: var(--tying-text-dynamic-font-weight, 500);
+        color: var(--tying-text-dynamic-font-color, #000);
+        & span {
+            position: relative;
+            &:after{
+                border-left: 2px solid var(--tying-text-cursor-color, #000);
+                background-color: var(--tying-text-bg, #fff);
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+@keyframes typing {
+    95%{
+        left: 100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
