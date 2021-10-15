@@ -1,0 +1,20 @@
+.time-record{
+    background-color: var(--time-record-bg, #fff);
+    border-radius: 1rem;
+    box-shadow: 2px 2px #f4f4f4, 2px -2px #f4f4f4, -2px -2px #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    &-details{
+        display: flex;
+    }
+    &-detail{
+        margin: 2rem 0 2rem 0;
+        padding: 1rem 2rem 0 2rem;
+        &:nth-of-type(3){
+            border-left: dashed thin #c4c4cc;
+        }
+    }
+    &-menu{
+        margin: 2.4rem;
+    }
+}

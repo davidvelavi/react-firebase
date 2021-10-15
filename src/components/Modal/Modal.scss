@@ -1,0 +1,101 @@
+.modal{
+    display: none;
+    &--open{
+        align-items: center;
+        background: rgba(#232323, 0.7) 0% 0% no-repeat padding-box;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        .modal-content{
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            opacity: 1;
+            visibility: visible;
+            transform: translate3d(0, 0, 0);
+            perspective: 1000px;
+            @keyframes shake {
+                10%, 90% {
+                  transform: translate3d(-1px, 0, 0);
+                }
+                20%, 80% {
+                  transform: translate3d(2px, 0, 0);
+                }
+                30%, 50%, 70% {
+                  transform: translate3d(-4px, 0, 0);
+                }
+                40%, 60% {
+                  transform: translate3d(4px, 0, 0);
+                }
+              }
+        }
+    }
+    &--oops-twice{
+        .modal-content{
+            background: transparent linear-gradient(134deg, #FF8B58 0%, #FF374C 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+    &--well-done{
+        .modal-content{
+            background: rgb(238,255,65);
+            background: linear-gradient(130deg, rgba(238,255,65,1) 0%, rgba(198,255,0,1) 33%);
+        }
+    }
+    &--opps-checked{
+        .modal-content{
+            background: transparent linear-gradient(314deg, #9B4BFF 0%, #EF62FF 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+    &--good-job-suppl,
+    &--delete{
+        .modal-content{
+            background: transparent linear-gradient(129deg, #01D6FF 0%, #04D1FF 11%, #5538FF 100%, #5636FF 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+    &--good-job-holiday{
+        .modal-content{
+            background: rgb(255,245,157);
+            background: linear-gradient(130deg, rgba(255,245,157,1) 0%, rgba(253,216,53,1) 33%);
+        }
+    }
+    &-content{
+        align-items: center;
+        background-color: #fff;
+        border-radius: 4rem;
+        box-shadow: 0px 0.4rem 3.4rem #000000C4;
+        display: flex;
+        flex-direction: column;
+        height: 45rem;
+        justify-content: center;
+        opacity: 0;
+        padding: 4rem;
+        transition-duration: 1s;
+        transition-property: visibility, opacity;
+        visibility: hidden;
+        width: 45rem;
+    }
+    &-title{
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+    &-description{
+        margin-top: 4rem;
+        text-align: center;
+        p {
+            line-height: 2rem;
+        }
+    }
+    &-buttons{
+        margin-top: 4rem;
+    }
+    &-button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}

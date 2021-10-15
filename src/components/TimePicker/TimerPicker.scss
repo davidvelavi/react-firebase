@@ -1,0 +1,28 @@
+.timer-picker{
+    &-inputs{
+        display: flex;
+    }
+    &-input{
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        text-align: center;
+        font-weight: bold;
+        height: 10rem;
+        width: 14rem;
+        border-radius: 1rem;
+        font-size: 5rem;
+        color: #651fff;
+        border: 0.3rem solid #651fff;
+        &:disabled{
+            border: none;
+            background-color: #fff;
+            color: #000;
+        }
+        &-title{
+            line-height: 2.6rem;
+        }
+    }
+}

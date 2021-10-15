@@ -11,4 +11,5 @@ export const AppContextProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
+
 export default AppContext;

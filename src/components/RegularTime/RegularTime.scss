@@ -1,0 +1,38 @@
+.regular-time {
+  padding: 3rem 0;
+  &-header {
+    &-command {
+      font-weight: bold;
+      line-height: 3rem;
+    }
+    &-description {
+      line-height: 3rem;
+    }
+  }
+  &-timers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 768px ) {
+      justify-content: flex-start;
+    }
+  }
+  &-timer {
+    margin-top: 5rem;
+    padding: 0 5rem;
+    @media screen and (min-width: 768px ) {
+      justify-content: flex-start;
+      &:not(:first-of-type) {
+        border-left: dashed thin #c3c3c3;
+      }
+    }
+    &--correlated {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .timer-picker-input{
+        width: 6rem;
+      }
+    }
+  }
+}

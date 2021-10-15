@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
   apiKey: String(process.env.API_KEY),
   authDomain: String(process.env.AUTH_DOMAIN),

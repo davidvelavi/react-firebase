@@ -1,0 +1,45 @@
+.time-detail{
+    &-description{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    &-label{
+        background-color: var(--time-detail-label-bg, #f4f4f4);
+        border-radius: 0.4rem;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        padding: 0.3rem;
+    }
+    &--worked-time{
+        .time-detail-description{
+            font-weight: normal;
+        }
+    }
+    &--time-off{
+        .time-detail-label{
+            background-color: var(--time-detail-time-off, #e91e63);
+        }
+    }
+    &--worked-hours{
+        .time-detail-label{
+            background-color: var(--time-detail-worked-hours, #d4e157);
+        }
+    }
+    &--night{
+        .time-detail-label{
+            background-color: var(--time-detail-night, #9575cd);
+        }
+    }
+    &--suppl{
+        .time-detail-label{
+            background-color: var(--time-detail-suppl, #40c4ff);
+        }
+    }
+    &--holiday{
+        .time-detail-label{
+            background-color: var(--time-detail-holiday, #ff9800);
+        }
+    }
+
+
+}

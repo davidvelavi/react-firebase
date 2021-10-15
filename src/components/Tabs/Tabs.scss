@@ -1,0 +1,33 @@
+.tabs {
+  &-header{
+    display: flex;
+    align-items: center;
+    &-slot{
+      padding: 2rem;
+    }
+  }
+  &-nav-bar {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    &-item {
+      cursor: pointer;
+      border-radius: 1rem 1rem 0 0;
+      padding: 2rem;
+      &[data-selected="true"] {
+        background-color: #fff;
+      }
+    }
+  }
+  &-content {
+    padding: 2rem;
+    border-radius: 0 1rem 1rem;
+    background-color: #fff;
+    &-item {
+      display: none;
+      &[data-selected="true"] {
+        display: block;
+      }
+    }
+  }
+}
